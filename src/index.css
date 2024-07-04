@@ -17,7 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -26,7 +27,7 @@ html, body {
 main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .routes-container {
@@ -78,7 +79,6 @@ button:focus-visible {
   }
 }
 
-
 .joma-color {
   color: #006ec7;
 }
@@ -93,7 +93,7 @@ button:focus-visible {
 
 .bg-joma-color:hover {
   color: white;
-  background-color: #0087F5;
+  background-color: #0087f5;
 }
 
 a:hover {
