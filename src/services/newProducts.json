@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "attributes": {
+      "title": "Supresor de Picos 12V",
+      "reference": "SP12-01",
+      "imageUrl": "https://www.joma-tools.com/catalogo/951-large_default/supresor-de-picos-12-y-24-voltios-josp.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "attributes": {
+      "title": "Supresor de Picos 24V",
+      "reference": "SP24-01",
+      "imageUrl": "https://www.joma-tools.com/catalogo/951-large_default/supresor-de-picos-12-y-24-voltios-josp.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "attributes": {
+      "title": "Supresor de Picos 48V",
+      "reference": "SP48-01",
+      "imageUrl": "https://www.joma-tools.com/catalogo/951-large_default/supresor-de-picos-12-y-24-voltios-josp.jpg"
+    }
+  }
+]

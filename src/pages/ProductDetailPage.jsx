@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getProductById } from "../services/productServices";
+// import { getProductById } from "../services/productServices";
 
 import GalleryImage from "../components/Ecommerce/GalleryImage";
 import ShareButtons from "../components/Ecommerce/ShareButtons";
