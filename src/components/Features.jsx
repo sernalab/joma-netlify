@@ -3,7 +3,7 @@ function Features() {
     <>
       <section className="max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12 text-center">
         <h2 className="text-4xl font-bold text-gray-600 mb-7">
-          Caracteísticas{" "}
+          Características{" "}
           <span className="joma-color font-bold">destacadas</span>
         </h2>
         <p className="font-medium leading-loose text-gray-600 mb-10 lg:mb-24">

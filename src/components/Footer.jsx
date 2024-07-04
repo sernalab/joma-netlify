@@ -22,11 +22,11 @@ function Footer() {
                     Preguntas frecuentes
                   </a>
                 </li>
-                <li className="mb-1">
+                {/* <li className="mb-1">
                   <a className="hover:underline" href="/empleo">
                     Trabaja con nosotros
                   </a>
-                </li>
+                </li> */}
                 <li className="mb-1">
                   <a className="hover:underline" href="/map">
                     ¿Dónde estamos?

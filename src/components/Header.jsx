@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { useJobs } from "../context/JobsContext";
-
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { jobs, loading } = useJobs();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -48,11 +45,9 @@ function Header() {
           <Link className="text-gray-600" to="/contact" onClick={closeMenu}>
             Contacto
           </Link>
-          {!loading && jobs.length > 0 && (
-            <Link className="text-gray-600" to="/empleo" onClick={closeMenu}>
+          {/* <Link className="text-gray-600" to="/empleo" onClick={closeMenu}>
               Empleo
-            </Link>
-          )}
+            </Link> */}
           {/* <Link
             className="bg-joma-color border border-joma-blue rounded-md p-3 text-white hover:bg-white hover:text-gray-600"
             to="/catalogo"
@@ -137,11 +132,11 @@ function Header() {
             >
               Contacto
             </Link>
-            {!loading && jobs.length > 0 && (
-              <Link className="text-gray-600" to="/empleo" onClick={closeMenu}>
-                Empleo
-              </Link>
-            )}
+
+            <Link className="text-gray-600" to="/empleo" onClick={closeMenu}>
+              Empleo
+            </Link>
+
             <Link
               className="bg-joma-color rounded-md p-3 text-white py-2"
               to="https://www.joma-tools.com/catalogo/"
