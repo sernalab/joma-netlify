@@ -1,7 +1,7 @@
 function ExportPage() {
   return (
     <>
-      <section className="bg-gray-200">
+      <section className="bg-gray-200 h-100">
         <div className="max-w-screen-xl mx-auto">
           <div class="container mx-auto py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
@@ -26,10 +26,6 @@ function ExportPage() {
               </div>
             </div>
           </div>
-          <p>
-            En Joma, tu éxito es nuestro compromiso. Únete a nuestra red de
-            profesionales satisfechos y lleva tu negocio al siguiente nivel.
-          </p>
         </div>
       </section>
     </>
