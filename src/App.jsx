@@ -19,6 +19,7 @@ import MapPage from "./pages/FooterPages/MapPage";
 import ExportPage from "./pages/ExportPage.jsx";
 import BlogListPage from "./pages/BlogListPage.jsx";
 import BlogDetailPage from "./pages/BlogDetailPage.jsx";
+import ProductDetailPage from "./pages/ProductDetailPage.jsx";
 
 function App() {
   const location = useLocation();
@@ -53,6 +54,7 @@ function App() {
             <Route path="/map" element={<MapPage />} />
             <Route path="/blog" element={<BlogListPage />} />
             <Route path="/blog/:id" element={<BlogDetailPage />} />
+            <Route path="/details/:id" element={<ProductDetailPage />} />
           </Routes>
         </div>
       </main>
