@@ -90,10 +90,6 @@ function AboutPage() {
             </div>
           </div>
         </div>
-        <p>
-          En Joma, tu éxito es nuestro compromiso. Únete a nuestra red de
-          profesionales satisfechos y lleva tu negocio al siguiente nivel.
-        </p>
       </section>
     </>
   );

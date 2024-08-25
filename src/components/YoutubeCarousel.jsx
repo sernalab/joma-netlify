@@ -27,7 +27,6 @@ const YoutubeCarousel = ({ videos }) => {
     };
 
     Object.assign(swiperRef.current, params);
-
     swiperRef.current.initialize();
   }, []);
 
@@ -36,7 +35,7 @@ const YoutubeCarousel = ({ videos }) => {
       {videos.map((video, index) => (
         <swiper-slide key={index}>
           <iframe
-            src={video.link.replace("watch?v=", "embed/")}
+            src={`https://www.youtube.com/embed/${video.id}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
