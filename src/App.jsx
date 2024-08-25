@@ -7,12 +7,14 @@ import Header from "./components/Header";
 import EnHeader from "./components/EnHeader.jsx";
 import Home from "./pages/HomePage";
 import Footer from "./components/Footer";
+import EnFooter from "./components/EnFooter";
 import AboutPage from "./pages/AboutPage";
 import NewsPage from "./pages/NewsPage";
 import VideosPage from "./pages/VideosPage";
 import FAQPage from "./pages/FAQPage";
 import EmpleoPage from "./pages/EmpleoPage";
 import ContactPage from "./pages/ContactPage";
+import ContactPageEN from "./pages/ContactPageEN";
 import EnvioPage from "./pages/FooterPages/EnvioPage";
 import PaymentPage from "./pages/FooterPages/PaymentPage";
 import MapPage from "./pages/FooterPages/MapPage";
@@ -33,11 +35,14 @@ function App() {
     }
   }, [location.pathname]);
 
-  const isExportPage = location.pathname === "/export";
+  const englishPages = ["/export", "/contactEN"];
+  const isEnglishPage = englishPages.some((page) =>
+    location.pathname.startsWith(page)
+  );
 
   return (
     <>
-      {isExportPage ? <EnHeader /> : <Header />}
+      {isEnglishPage ? <EnHeader /> : <Header />}
       <main>
         <div className="routes-container">
           <Routes>
@@ -48,6 +53,7 @@ function App() {
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/empleo" element={<EmpleoPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/contactEN" element={<ContactPageEN />} />
             <Route path="/envio" element={<EnvioPage />} />
             <Route path="/payment" element={<PaymentPage />} />
             <Route path="/export" element={<ExportPage />} />
@@ -58,7 +64,7 @@ function App() {
           </Routes>
         </div>
       </main>
-      <Footer />
+      {isEnglishPage ? <EnFooter /> : <Footer />}
     </>
   );
 }
